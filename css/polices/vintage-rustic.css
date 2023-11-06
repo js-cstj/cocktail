@@ -1,0 +1,13 @@
+/*
+Vintage and Rustic:
+Font 1 (Heading): Abril Fatface
+Font 2 (Subheading): Josefin Slab
+Font 3 (Body): Lora
+*/
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Josefin+Slab&family=Lora:wght@400&display=swap');
+
+:root {
+    --font-heading: 'Abril Fatface', cursive;
+    --font-subheading: 'Josefin Slab', serif;
+    --font-body: 'Lora', serif;
+}

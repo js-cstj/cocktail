@@ -1,0 +1,23 @@
+.liste-cocktails {
+    display: grid;
+    grid-template-columns: repeat(3, 240px);
+    gap: 1em;
+    > div {
+        a {
+            font-style: italic;
+            &:hover {
+                font-style: normal;
+            }
+        }
+        border: 1px solid black;
+        border-radius: .5em;
+    }
+    figure {
+        img {
+            width: 238px;
+            object-fit: cover;
+            object-position: center;
+            aspect-ratio: 1 / 1;
+        }
+    }
+}

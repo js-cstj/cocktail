@@ -1,0 +1,14 @@
+/*
+Playful and Casual:
+Font 1 (Heading): Luckiest Guy
+Font 2 (Subheading): Pacifico
+Font 3 (Body): Nunito Sans
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Pacifico&family=Nunito+Sans:wght@400&display=swap');
+
+:root {
+    --font-heading: 'Luckiest Guy', cursive;
+    --font-subheading: 'Pacifico', cursive;
+    --font-body: 'Nunito Sans', sans-serif;
+}

@@ -1,0 +1,16 @@
+/* 
+Handwritten:
+Font 1 (Heading): Pacifico
+Font 2 (Subheading): Amatic SC
+Font 3 (Body): Indie Flower
+ */
+
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Amatic+SC&family=Indie+Flower&display=swap');
+
+/* Apply the fonts to selectors */
+:root {
+    --font-heading: 'Pacifico', sans-serif;
+    --font-subheading: 'Amatic SC', cursive;
+    --font-body: 'Indie Flower', cursive;
+}

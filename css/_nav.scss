@@ -1,0 +1,22 @@
+nav {
+	ul {
+		list-style: none;
+		display: flex;
+
+		li {
+			display: flex;
+
+			a {
+				flex-grow: 1;
+				display: flex;
+				padding: 6px 12px;
+
+				&:hover {
+					text-decoration: underline;
+					background: #333;
+					color: #fff;
+				}
+			}
+		}
+	}
+}

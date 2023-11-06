@@ -1,0 +1,14 @@
+/*
+Luxury and Elegance:
+Font 1 (Heading): Cormorant Garamond
+Font 2 (Subheading): Parisienne
+Font 3 (Body): Lato
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond&family=Parisienne&family=Lato:wght@400&display=swap');
+
+:root {
+    --font-heading: 'Cormorant Garamond', serif;
+    --font-subheading: 'Parisienne', cursive;
+    --font-body: 'Lato', sans-serif;
+}

@@ -1,0 +1,22 @@
+#interface, .interface {
+	min-height: 100%;
+	display: grid;
+	grid-template-rows: auto auto 1fr auto;
+	& > header, & > footer {
+		padding: .5em 1em;
+		background-color: hsl(var(--h), var(--s), 30%);
+		color: hsl(var(--h), var(--s), 100%);
+		display: flex;
+		justify-content: space-between;
+	}
+	& > header {
+		order: -1000;
+	}
+	& > nav {
+		background-color: hsl(var(--h), var(--s), 35%);
+		color: hsl(var(--h), var(--s), 100%);
+	}
+	& > footer {
+		order: 1000;
+	}
+}

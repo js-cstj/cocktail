@@ -1,0 +1,14 @@
+/* 
+Serif Elegance Trio:
+Font 1 (Heading): Crimson Text
+Font 2 (Subheading): Merriweather
+Font 3 (Body): Source Sans Pro
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;700&family=Merriweather:wght@400;700&family=Source+Sans+Pro:wght@400;700&display=swap');
+
+:root {
+    --font-heading: 'Crimson Text', serif;
+    --font-subheading: 'Merriweather', serif;
+    --font-body: 'Source Sans Pro', sans-serif;
+}

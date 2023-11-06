@@ -1,0 +1,14 @@
+/* 
+Elegant Script:
+Font 1 (Heading): Great Vibes
+Font 2 (Subheading): Sacramento
+Font 3 (Body): Quicksand
+ */
+
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Sacramento&family=Quicksand:wght@400;700&display=swap');
+
+:root {
+    --font-heading: 'Great Vibes', cursive;
+    --font-subheading: 'Sacramento', cursive;
+    --font-body: 'Quicksand', sans-serif;
+}

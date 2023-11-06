@@ -1,0 +1,121 @@
+@import 'polices/professional-business.css';
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Roboto+Slab:400,700&display=swap");
+:root {
+  --h: 240;
+  --s: 0%;
+  --l: 50%;
+  --font-family: "Roboto", sans-serif;
+  --font-titre: "Roboto Slab", serif;
+}
+
+html {
+  height: 100%;
+  font-size: 16px;
+  font-family: var(--font-body);
+}
+
+body {
+  height: 100%;
+}
+
+h1,
+h3,
+.heading {
+  font-family: var(--font-heading);
+  font-weight: 700;
+}
+
+h2,
+h4,
+th,
+legend,
+caption,
+label,
+figcaption,
+.subheading {
+  font-family: var(--font-subheading);
+  font-weight: 400;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+#interface, .interface {
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: auto auto 1fr auto;
+}
+#interface > header, #interface > footer, .interface > header, .interface > footer {
+  padding: 0.5em 1em;
+  background-color: hsl(var(--h), var(--s), 30%);
+  color: hsl(var(--h), var(--s), 100%);
+  display: flex;
+  justify-content: space-between;
+}
+#interface > header, .interface > header {
+  order: -1000;
+}
+#interface > nav, .interface > nav {
+  background-color: hsl(var(--h), var(--s), 35%);
+  color: hsl(var(--h), var(--s), 100%);
+}
+#interface > footer, .interface > footer {
+  order: 1000;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+nav ul li {
+  display: flex;
+}
+nav ul li a {
+  flex-grow: 1;
+  display: flex;
+  padding: 6px 12px;
+}
+nav ul li a:hover {
+  text-decoration: underline;
+  background: #333;
+  color: #fff;
+}
+
+#app {
+  padding: 1em;
+}
+
+.liste-cocktails {
+  display: grid;
+  grid-template-columns: repeat(3, 240px);
+  gap: 1em;
+}
+.liste-cocktails > div {
+  border: 1px solid black;
+  border-radius: 0.5em;
+}
+.liste-cocktails > div a {
+  font-style: italic;
+}
+.liste-cocktails > div a:hover {
+  font-style: normal;
+}
+.liste-cocktails figure img {
+  width: 238px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  aspect-ratio: 1/1;
+}/*# sourceMappingURL=style.css.map */

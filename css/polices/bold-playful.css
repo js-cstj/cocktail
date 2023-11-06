@@ -1,0 +1,15 @@
+/* 
+Bold and Playful:
+Font 1 (Heading): Fredoka One
+Font 2 (Subheading): Oswald
+Font 3 (Body): Nunito
+ */
+
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Oswald:wght@400;700&family=Nunito:wght@400;700&display=swap');
+
+:root {
+    --font-heading: 'Fredoka One', sans-serif;
+    --font-subheading: 'Oswald', sans-serif;
+    --font-body: 'Nunito', sans-serif;
+}

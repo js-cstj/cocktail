@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="style.css">
+	<script type="module">
+		var card = ``;
+		card += `<h1>Exploration des fonds marins : À la découverte des merveilles cachées sous l'océan</h1>`;
+		card += `<p>La plongée sous-marine est bien plus qu'un simple loisir ; c'est une aventure qui vous emmène dans un royaume d'une beauté extraordinaire. Les récifs de corail multicolores, les poissons exotiques aux couleurs vives, et les créatures marines fascinantes vous attendent.</p>`;
+		card += `<h2>Plongez dans le monde mystérieux des abysses où la faune et la flore marines révèlent leur splendeur.</h2>`;
+		card += `<p>Rejoignez-nous pour une exploration inoubliable des profondeurs de la mer, où chaque plongée révèle de nouvelles surprises. C'est une opportunité de découvrir la diversité de la vie marine et de sensibiliser à l'importance de la préservation de nos océans pour les générations futures.</p>`;
+		var styles = {
+			"Artistic and Handcrafted": "#artistic-handcrafted{--font-heading 'Poiret One', cursive;--font-subheading;'Indie Flower', cursive;--font-body;'Dancing Script', cursive}",
+			"Bold and Playful": "#bold-playful{--font-heading: 'Fredoka One', sans-serif;--font-subheading: 'Oswald', sans-serif;--font-body: 'Nunito', sans-serif}",
+			"Corporate": "#corporate{--font-heading: 'Lato', sans-serif;--font-subheading: 'Open Sans', sans-serif;--font-body: 'Roboto', sans-serif;}",
+			"Elegant Script": "#elegant-script{--font-heading: 'Great Vibes', cursive;--font-subheading: 'Sacramento', cursive;--font-body: 'Quicksand', sans-serif;}",
+			"Elegant and Sophisticated": "#elegant-sophisticated{--font-heading: 'Cormorant', serif;--font-subheading: 'Crimson Text', serif;--font-body: 'Source Sans Pro', sans-serif;}",
+			"Fun and Playful": "#fun-playful{ --font-heading: 'Baloo', cursive;--font-subheading: 'Bangers', cursive;--font-body: 'Lato', sans-serif;}",
+			"Futuristic and Clean": "#futuristic-clean{--font-heading: 'Poppins', sans-serif;--font-subheading: 'Roboto Condensed', sans-serif;--font-body: 'Nunito Sans', sans-serif;}",
+			"Geometric Sans-Serif": "#geometric-sans-serif{--font-heading: 'Roboto Condensed', sans-serif;--font-subheading: 'Ubuntu', sans-serif;--font-body: 'Noto Sans', sans-serif;}",
+			"Handwritten": "#handwritten{--font-heading: 'Pacifico', sans-serif;--font-subheading: 'Amatic SC', cursive;--font-body: 'Indie Flower', cursive;}",
+			"Luxury and Elegance": "#luxury-elegance{--font-heading: 'Cormorant Garamond', serif;--font-subheading: 'Parisienne', cursive;--font-body: 'Lato', sans-serif;}",
+			"Minimalist": "#minimalist{--font-heading: 'Source Sans Pro', sans-serif;--font-subheading: 'Lato', sans-serif;--font-body: 'Poppins', sans-serif;}",
+			"Modern Sans-Serif": "#modern-serif{--font-heading: 'Montserrat', sans-serif;--font-subheading: 'Raleway', sans-serif;--font-body: 'Open Sans', sans-serif;}",
+			"Nature and Organic": "#nature-organic{ --font-heading: 'Caveat', cursive;--font-subheading: 'Satisfy', cursive;--font-body: 'Dosis', sans-serif;}",
+			"Playful and Casual": "#playful-casual{--font-heading: 'Luckiest Guy', cursive;--font-subheading: 'Pacifico', cursive;--font-body: 'Nunito Sans', sans-serif;}",
+			"Professional and Business": "#professional-business{--font-heading: 'Raleway', sans-serif;--font-subheading: 'Montserrat', sans-serif;--font-body: 'Roboto', sans-serif;}",
+			"Retro": "#retro{--font-heading: 'Lobster', cursive;--font-subheading: 'Pacifico', cursive;--font-body: 'Indie Flower', cursive;}",
+			"Serif Elegance": "#serif-elegance{--font-heading: 'Crimson Text', serif;--font-subheading: 'Merriweather', serif;--font-body: 'Source Sans Pro', sans-serif;}",
+			"Tech and Modern": "#tech-modern{--font-heading: 'Exo 2', sans-serif;--font-subheading: 'Orbitron', sans-serif;--font-body: 'Raleway', sans-serif;}",
+			"Vintage and Rustic": "#vintage-rustic{--font-heading: 'Abril Fatface', cursive;--font-subheading: 'Josefin Slab', serif;--font-body: 'Lora', serif;}",
+		};
+		var style = document.head.appendChild(document.createElement("style"));
+		style.innerHTML = Object.values(styles).join("\n");
+		for (let nom in styles) {
+			var fieldset = document.createElement("fieldset");
+			fieldset.classList.add("card");
+			let legend = fieldset.appendChild(document.createElement("legend"));
+			legend.innerHTML = nom;
+			fieldset.id = styles[nom].slice(1).split("{")[0];
+			var div = fieldset.appendChild(document.createElement("div"));
+			div.innerHTML = card;
+			document.querySelector("main").appendChild(fieldset);
+		}
+	</script>
+</head>
+
+<body>
+	<div id="interface">
+		<header>
+			<h1>Les polices</h1>
+		</header>
+		<main></main>
+	</div>
+</body>
+
+</html>

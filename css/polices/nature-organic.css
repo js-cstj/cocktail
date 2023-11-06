@@ -1,0 +1,14 @@
+/*
+Nature and Organic:
+Font 1 (Heading): Caveat
+Font 2 (Subheading): Satisfy
+Font 3 (Body): Dosis
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Satisfy&family=Dosis:wght@400&display=swap');
+
+:root {
+    --font-heading: 'Caveat', cursive;
+    --font-subheading: 'Satisfy', cursive;
+    --font-body: 'Dosis', sans-serif;
+}

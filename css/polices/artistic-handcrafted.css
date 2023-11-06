@@ -1,0 +1,14 @@
+/*
+Artistic and Handcrafted:
+Font 1 (Heading): Poiret One
+Font 2 (Subheading): Indie Flower
+Font 3 (Body): Dancing Script
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&family=Indie+Flower&family=Dancing+Script&display=swap');
+
+:root {
+    --font-heading: 'Poiret One', cursive;
+    --font-subheading: 'Indie Flower', cursive;
+    --font-body: 'Dancing Script', cursive;
+}

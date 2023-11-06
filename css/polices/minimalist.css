@@ -1,0 +1,14 @@
+/* 
+Minimalist Trio:
+Font 1 (Heading): Source Sans Pro
+Font 2 (Subheading): Lato
+Font 3 (Body): Poppins
+ */
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&family=Lato:wght@400;700&family=Poppins:wght@400;700&display=swap');
+
+:root {
+    --font-heading: 'Source Sans Pro', sans-serif;
+    --font-subheading: 'Lato', sans-serif;
+    --font-body: 'Poppins', sans-serif;
+}

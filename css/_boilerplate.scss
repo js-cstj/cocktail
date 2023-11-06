@@ -1,0 +1,41 @@
+html {
+	height: 100%;
+	font-size: 16px;
+	font-family: var(--font-body);
+}
+
+body {
+	height: 100%;
+}
+
+h1,
+h3,
+.heading {
+	font-family: var(--font-heading);
+	font-weight: 700;
+}
+
+h2,
+h4,
+th,
+legend,
+caption,
+label,
+figcaption,
+.subheading {
+	font-family: var(--font-subheading);
+	font-weight: 400;
+}
+
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}

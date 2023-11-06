@@ -1,0 +1,14 @@
+/*
+Tech and Modern:
+Font 1 (Heading): Exo 2
+Font 2 (Subheading): Orbitron
+Font 3 (Body): Raleway
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Exo+2&family=Orbitron&family=Raleway:wght@400&display=swap');
+
+:root {
+    --font-heading: 'Exo 2', sans-serif;
+    --font-subheading: 'Orbitron', sans-serif;
+    --font-body: 'Raleway', sans-serif;
+}

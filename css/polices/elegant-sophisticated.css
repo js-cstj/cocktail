@@ -1,0 +1,13 @@
+/*
+Elegant and Sophisticated:
+Font 1 (Heading): Cormorant
+Font 2 (Subheading): Crimson Text
+Font 3 (Body): Source Sans Pro
+*/
+@import url('https://fonts.googleapis.com/css2?family=Cormorant&family=Crimson+Text&family=Source+Sans+Pro:wght@400&display=swap');
+
+:root {
+    --font-heading: 'Cormorant', serif;
+    --font-subheading: 'Crimson Text', serif;
+    --font-body: 'Source Sans Pro', sans-serif;
+}

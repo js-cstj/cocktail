@@ -1,0 +1,13 @@
+/*
+Professional and Business:
+Font 1 (Heading): Raleway
+Font 2 (Subheading): Montserrat
+Font 3 (Body): Roboto
+*/
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400&family=Montserrat:wght@400&family=Roboto:wght@400&display=swap');
+
+:root {
+    --font-heading: 'Raleway', sans-serif;
+    --font-subheading: 'Montserrat', sans-serif;
+    --font-body: 'Roboto', sans-serif;
+}
