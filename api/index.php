@@ -1,15 +1,13 @@
 <?php
 include_once 'Api.php';
 
-$uri = rtrim($_SERVER['REQUEST_URI'], '/');
-$sub = dirname($_SERVER['SCRIPT_NAME']);
-$uri = substr($uri, strlen($sub));
+$uri = Api::uri();
 if ($uri === '') {
 	$output = [
-		'categories_url' => Api::root('categories'),
-		'ingredients_url' => Api::root('ingredients'),
-		'glasses_url' => Api::root('glasses'),
-		'alcoholic_url' => Api::root('alcoholic'),
+		'url_categories' => Api::root('categories'),
+		'url_ingredients' => Api::root('ingredients'),
+		'url_glasses' => Api::root('glasses'),
+		'url_alcoholic' => Api::root('alcoholic'),
 	];
 	Api::output($output);
 }
@@ -32,8 +30,13 @@ if ($uri === 'ingredients') {
 }
 if ($uri === 'alcoholic') {
 	$results = Api::listAlcoholic();
-	$output = Api::results($results, 'alcoholic', ['original_url' => Api::api('list.php?a=list')]);
+	$output = Api::results($results, 'alcoholic', ['url_original' => Api::remote('list.php?a=list')]);
 	Api::output($output);
+}
+if (preg_match('#drinks/([0-9]+)#', $uri, $matches)) {
+	$output = Api::drink($matches[1]);
+	Api::output($output);
+	// Api::output($matches);
 }
 
 Api::output($_SERVER, JSON_PRETTY_PRINT);
