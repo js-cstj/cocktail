@@ -1,9 +1,9 @@
-@import 'polices/professional-business.css';
+@import 'polices/elegant-script.css';
 @import url("https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Roboto+Slab:400,700&display=swap");
 :root {
-  --h: 240;
-  --s: 0%;
+  --h: 217;
+  --s: 44%;
   --l: 50%;
   --font-family: "Roboto", sans-serif;
   --font-titre: "Roboto Slab", serif;
@@ -51,26 +51,33 @@ a {
   color: inherit;
 }
 
-#interface, .interface {
+#interface,
+.interface {
   min-height: 100%;
   display: grid;
   grid-template-rows: auto auto 1fr auto;
 }
-#interface > header, #interface > footer, .interface > header, .interface > footer {
+#interface > header, #interface > footer,
+.interface > header,
+.interface > footer {
+  --hi: #fff2;
   padding: 0.5em 1em;
   background-color: hsl(var(--h), var(--s), 30%);
   color: hsl(var(--h), var(--s), 100%);
   display: flex;
   justify-content: space-between;
 }
-#interface > header, .interface > header {
+#interface > header,
+.interface > header {
   order: -1000;
 }
-#interface > nav, .interface > nav {
+#interface > nav,
+.interface > nav {
   background-color: hsl(var(--h), var(--s), 35%);
   color: hsl(var(--h), var(--s), 100%);
 }
-#interface > footer, .interface > footer {
+#interface > footer,
+.interface > footer {
   order: 1000;
 }
 
@@ -118,4 +125,4 @@ nav ul li a:hover {
   -o-object-position: center;
      object-position: center;
   aspect-ratio: 1/1;
-}/*# sourceMappingURL=style.css.map */
+}
